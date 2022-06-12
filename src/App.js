@@ -10,8 +10,14 @@ import { Ecommerce, Orders, Calender, Employees, Staked,
   Prymird, Customers, Karbana, Area, Bar, Finacial,
         ColorMapping, ColorPicker, Editor, Line, Pie } from './pages/Charts'
 
+
+import { useStateContext } from './contexts/ContexProvider'
+
 function App() {
-const activeMenu = true;
+
+const { activeMenu } = useStateContext();
+  
+
 
   return (
     <div className="App">
